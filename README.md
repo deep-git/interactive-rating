@@ -1,8 +1,10 @@
-# React + Vite
+# Interactive Rating Component
+This project is a Frontend Mentor challenge project that utilizes HTML, CSS, and React to create an interactive rating component, which allows the user to select a rating and submit the rating, to which the user will then be redirected to a thank you page that shows the rating out of 5 that the user chose, as well as a thank you message.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## View Site
+Link: https://deep-git.github.io/product-preview-card/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Utilized
+- HTML
+- CSS
+- React
