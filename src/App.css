@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-darkblue: hsl(216, 12%, 8%);
+  --card-background: hsl(215, 23%, 15%);
+}
+
+.outer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--very-darkblue);
+}
+
+.card_container {
+  width: 410px;
+  height: auto;
+  border-radius: 30px;
+  background: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.star_icon_container {
+  width: 45px;
+  height: 45px;
+  background: var(--dark-blue);
+  padding: 14px;
+  border-radius: 50%;
+}
+
+.main_heading {
+  color: white;
+  margin-top: 36px;
+  font-size: 1.7em;
+}
+
+.description {
+  color: var(--medium-grey);
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.button_container {
+  width: 100%;
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--dark-blue);
+  cursor: pointer;
+  color: var(--light-grey);
+  border: none;
+  font-size: 1.1em;
+}
+
+.rating_button:hover {
+  background: var(--medium-grey);
+  color: white;
+}
+
+.rating_button.active {
+  background: var(--primary-orange);
+  color: white;
+}
+
+.submit_button {
+  width: 100%;
+  margin-top: 32px;
+  padding: 14px 20px;
+  border-radius: 25px;
+  border: none;
+  background: var(--primary-orange);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.0em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submit_button:hover {
+  background: white;
+  color: var(--primary-orange);
+}
+
+.card_container_result {
+  width: 410px;
+  height: auto;
+  border-radius: 30px;
+  background: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.rating_result {
+  background: var(--dark-blue);
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: var(--primary-orange);
+  margin-top: 35px;
+}
+
+.thankyou_heading {
+  font-size: 1.7em;
+  color: white;
+  margin-top: 35px;
+}
+
+.thankyou_description {
+  font-size: 0.97em;
+  color: var(--medium-grey);
+  margin-top: 14px;
+  line-height: 1.55em;
+}
+
+@media only screen and (max-width: 425px) {
+  .card_container {
+    width: 90%;
+    border-radius: 15px;
+    padding: 20px 27px;
+  }
+
+  .main_heading {
+    margin-top: 18px;
+    font-size: 1.5em;
+  }
+  
+  .description {
+    margin-top: 11px;
+    font-size: 14px;
+  }
+
+  .rating_button {
+    width: 45px;
+    height: 45px;
+    font-size: 0.9em;
+  }
+
+  .submit_button {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+
+  .card_container_result {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    padding: 35px;
+  }
+
+  .thankyou_icon_container {
+    width: 145px;
+  }
+
+  .rating_result {
+    padding: 6px 12px;
+    margin-top: 25px;
+    font-size: 0.9em;
+  }
+
+  .thankyou_heading {
+    font-size: 1.5em;
+    margin-top: 25px;
+  }
+  
+  .thankyou_description {
+    font-size: 0.85em;
+    margin-top: 14px;
+  }
+}
